@@ -1,2 +1,0 @@
-# Tambola
-Tambola Game

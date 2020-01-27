@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tambola</title>
+  <script type="text/javascript" src="../Controller/playtambola.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="tambolastyle.css">
+</head>
+
+<body style="background-color: darkseagreen;">
+  <center>
+    <div class="title">
+      <h1>
+        Play Tambola
+      </h1>
+    </div>
+    <div id="upper">
+      <table>
+        <tr>
+          <td>No. of players :</td>
+          <td><select id="players">
+              <option value=1> 1
+              <option value=2> 2
+              <option value=3> 3
+              <option value=4> 4
+              <option value=5> 5</td>
+      </table>
+      <h1><button onclick="playgame()" class="button">Start</button></h1>
+    </div>
+    <div id=start>
+      <h1>
+        <div id="number" style="display: none;">
+          0
+        </div>
+      </h1>
+      <button onclick="getLuckyNumber()" class="button" id="button" style="display: none;">Get Lucky
+        Number</button><br>
+      </center>
+      <div id="temp" style="display: none;">
+      <table id="board" border="1" > 
+        <tr>
+          Main Board<br>
+        </tr>
+      </table>
+      </div>
+      <center>
+      <table id="ticket">
+        <tr>
+          <th>
+            <div id=1 style="display: none;">
+              Player 1
+
+            </div>
+          </th>
+          <th>
+            <div id=2 style="display: none;">
+              Player 2
+            </div>
+          </th>
+          <th>
+            <div id=3 style="display: none;">
+              Player 3
+            </div>
+          </th>
+          <th>
+            <div id=4 style="display: none;">
+              Player 4
+            </div>
+          </th>
+          <th>
+            <div id=5 style="display: none;">
+              Player 5
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <table id=10 style="display: none;" border=1></table>
+          </td>
+          <td>
+            <table id=20 style="display: none;" border=1></table>
+          </td>
+          <td>
+            <table id=30 style="display: none;" border=1></table>
+          </td>
+          <td>
+            <table id=40 style="display: none;" border=1></table>
+          </td>
+          <td>
+            <table id=50 style="display: none;" border=1></table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="player10" style="display: none;" onclick="checkFor(0) ">Check My Ticket</button>
+          </td>
+          <td>
+            <button id="player20" style="display: none;" onclick="checkFor(1) ">Check My Ticket</button>
+          </td>
+          <td>
+            <button id="player30" style="display: none;" onclick="checkFor(2) ">Check My Ticket</button>
+          </td>
+          <td>
+            <button id="player40" style="display: none;" onclick="checkFor(3) ">Check My Ticket</button>
+          </td>
+          <td>
+            <button id="player50" style="display: none;" onclick="checkFor(4) ">Check My Ticket</button>
+          </td>
+        </tr>
+      </table>
+    <//div>
+  </center>
+</body>
+
+</html>
